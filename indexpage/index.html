@@ -1,0 +1,135 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>西文文献检索系统</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../dist/css/animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../dist/css/creative.css" type="text/css">
+    <link href='../dist/css/font.css' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    body{
+        font-family: 'Lobster', cursive;
+        font-size: 150%;
+    }
+    #js{
+        font-family: 'Alegreya', serif;
+        font-size: 150%;
+    }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.php">西文文献检索系统前端</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#page-top">关于系统</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../pages/login.php">登陆后台</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>西文文献检索系统前端</h1>
+                <hr>
+                <p>这个系统作业课程作业调用了889个停用词表，使用TD*IDF计算相似程度，提供包括标题检索，作者检索和全文检索等多项功能，使用了前端框架bootstrap，相关代码有开源世界的帮助，特此表示谢意~</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">开始检索</a>
+            </div>
+        </div>
+    </header>
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">西文文献检索系统</h2>
+                    <hr class="light">
+                    <p class="text-faded">这里是一个很大很大的世界，等待你的发现</p>
+                    <form method="post" action="result.php" >
+                        <div class="input-group input-group-lg ">
+                            <input type="text" class="form-control" placeholder="输入您的检索词" name="jsc" id="js">
+                            <span class="input-group-btn">
+                             <button class="btn btn-default" type="submit">检索一下</button>
+                            </span>
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <label class="radio-inline">
+                                <input type="radio" name="op" id="inlineRadio1" value="1" checked/> 全文检索
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="op" id="inlineRadio2" value="2"> 作者检索
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="op" id="inlineRadio3" value="3"> 标题检索
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">联系我们</h2>
+                    <hr class="primary">
+                    <p id="lxwm">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center" id="lxwm">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center" id="lxwm">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="#" >feedback@startbootstrap.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../dist/js/jquery.easing.min.js"></script>
+    <script src="../dist/js/jquery.fittext.js"></script>
+    <script src="../dist/js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/creative.js"></script>
+</body>
+
+</html>
