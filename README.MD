@@ -1,17 +1,20 @@
 ##作业说明：
-一.	首先导入cwgdb.sql文件，将数据导入数据库中。
-二.	添加一个用户
+>	第一次写PHP的时候写的作业，也是成长的过程，在这个作业中，写过了AJAX，也用过了JQuery的表单验证。
+>	
+
+####一.	首先导入cwgdb.sql文件，将数据导入数据库中。
+####二.	添加一个用户
 	
 	CREATE USER 'phpcourse1'@'localhost' IDENTIFIED BY 'phpcourse';
 	GRANT all ON cwgdb.* TO 'phpcourse1'@'localhost';
 
 建立了一个用户phpcourse1，设置密码为phpcourse ,授予权限cwgdb的全部权限。
 这里需要指出的是在实际的系统中，应该更多的考虑权限管理的问题，对于一般的查询，只应该赋予查询的权限，并且建立视图。而在用户登录也应该对不同的用户赋予不同的权限，设置有rank字段，由于时间关系并没有实现接口去做这一块。
-三.	文件夹下的index.php为入口
-四.	bootstrap与JQuery，
-为了实现ajax提交，使用了JQuery框架,设计响应式的界面，使用了bootstrap框架。
+####三.	文件夹下的index.php为入口
+####四.	bootstrap与JQuery，
+####为了实现ajax提交，使用了JQuery框架,设计响应式的界面，使用了bootstrap框架。
 
-五.	作业结构说明
+###五.	作业结构说明
 在打包的作业中，
 
 ![](http://ww3.sinaimg.cn/mw690/8785ef6ejw1f37pyaxx4wj20q0061myo.jpg)
@@ -19,6 +22,7 @@
 图 1文件结构
 
 ![](http://ww2.sinaimg.cn/mw690/8785ef6ejw1f37pynvxt4j20z7090tbn.jpg)
+
 图 2function目录文件说明
 
 其中对于在function中以class为后缀的php文件是我将必要的功能封装为一个类，方便文章的调用。
